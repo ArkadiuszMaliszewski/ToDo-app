@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" />
+    <script src="app.js"></script>
+    <title>ToDo App</title>
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">TODO's</h1>
+          <p>Moje zadania</p>
+          <form id="search-books">
+            <input type="text" placeholder="Wyszukaj zadanie ..." />
+          </form>
+	    	</div>
+	    </header>
+	    <div id="book-list">
+	    	<h2 class="title">Lista zadań do wykonania:</h2>
+	    	<ul>
+	    		<li>
+	    			<span class="name">Powtórz materiał na najbliższy egzamin.</span>
+	    			<span class="delete">usuń</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Zapoznaj się z materiałem dotyczącym wielowątkowości w Javie</span>
+	    			<span class="delete">usuń</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Przeczytaj książkę w tym tygodniu</span>
+	    			<span class="delete">usuń</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Zrób zakupy na weekend</span>
+	    			<span class="delete">usuń</span>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <form id="add-book">
+        <input type="checkbox" id="hide" />
+        <label for="hide">Ukryj wszystkie zania</label>
+	    	<input type="text" placeholder="Dodaj zadanie ..." />
+	    	<button>Dodaj</button>
+	    </form>
+      <div id="tabbed-content">
+        <ul class="tabs">
+          <li data-target="#about" class="active">Notatki</li>
+          <li data-target="#contact">Kontakty</li>
+        </ul>
+        <div class="panel active" id="about">
+          <p>Zawartość zakładki notatki...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+        </div>
+        <div class="panel" id="contact">
+          <p>Zawartość zakładki kontakty...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
