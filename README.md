@@ -1,6 +1,6 @@
 ## Getting started
 1. Import files into local hard drive
-2. Run Index.html in a local browser
+2. Run Index.html in a local web browser
 
 ## Functionality
 The application allows adding, removing, hiding and searching for tasks to do.
